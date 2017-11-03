@@ -119,8 +119,8 @@ class GuiHandler:
 
     def startGui(self):
         # If login isnt True then the clients maingui doesnt start
-        self.chattIsAllowed = True
-        #self.startIntroGui()
+        self.chattIsAllowed = False
+        self.startIntroGui()
         if self.chattIsAllowed == True:
             self.startMainGui()
 
