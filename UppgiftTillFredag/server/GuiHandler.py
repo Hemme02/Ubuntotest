@@ -19,7 +19,7 @@ class GuiHandler:
             # Sub func to get entered port. No control for empty entry
             self.portToReturn = entOfPort.get()
             rootToGetPort.destroy()
-        but = tkinter.Button(rootToGetPort,text="set port",command = confirmPort)
+        but = tkinter.Button(rootToGetPort,text="set port",bg='blue', fg='white', command = confirmPort)
         but.grid(row = 1, column = 0)
         rootToGetPort.mainloop()
         return self.portToReturn
