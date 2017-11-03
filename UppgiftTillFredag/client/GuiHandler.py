@@ -114,7 +114,7 @@ class GuiHandler:
             self.socketHandler.sendMsg("register " + username + " " + password + " " + email + " " + name)
             self.registerChild.destroy()
 
-        but = tkinter.Button(self.registerChild,text = "register", command = confirmRegister)
+        but = tkinter.Button(self.registerChild,text = "register" command = confirmRegister)
         but.grid(row = 4, column = 0)
 
     def startGui(self):

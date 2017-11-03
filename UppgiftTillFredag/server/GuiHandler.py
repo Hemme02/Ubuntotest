@@ -42,9 +42,9 @@ class GuiHandler:
         self.entryOfUser.grid(row = 1,column = 0)
 
         # Creates send and quit button
+        self.buttonToTrigg1 = tkinter.Button(self.root, text="close", command=self.closeConnection)
+        self.buttonToTrigg1.grid(row=1, column=1)
         self.buttonToTrigg = tkinter.Button(self.root, text = "enter", command = self.sendMsgBySocketHandler)
-        self.buttonToTrigg.grid(row = 1,column = 1)
-        self.buttonToTrigg = tkinter.Button(self.root, text = "close", command = self.closeConnection)
         self.buttonToTrigg.grid(row = 2,column = 0)
         self.root.mainloop()
 
